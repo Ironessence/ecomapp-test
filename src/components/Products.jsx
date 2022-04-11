@@ -1,9 +1,15 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { popularProducts } from '../data';
 import Product from './Product';
 
-const Products = () => {
+const Products = ({cat, filters, sort}) => {
+  
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
+  
   return (
     <Container>
         {popularProducts.map((item) => (

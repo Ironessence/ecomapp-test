@@ -28,16 +28,19 @@ export const sliderItems = [
       id: 1,
       img: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
       title: "SMART WATCHES",
+      cat: 'smart-watches',
     },
     {
       id: 2,
       img: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=742&q=80",
       title: "CLASSIC WATCHES",
+      cat: 'classic-watches',
     },
     {
       id: 3,
       img: "https://images.unsplash.com/photo-1517463700628-5103184eac47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
       title: "WATERPROOF COLLECTION",
+      cat: 'waterproof',
     },
   ];
 
