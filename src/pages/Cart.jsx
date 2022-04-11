@@ -272,6 +272,7 @@ const SummaryButton = styled.button`
     border: none;
     font-weight: 600;
     letter-spacing: 0.5px;
+    cursor: pointer;
 `
 
 const SummaryInput = styled.input`

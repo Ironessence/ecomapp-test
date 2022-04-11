@@ -5,6 +5,7 @@ import { Badge } from '@material-ui/core';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { getRadioUtilityClass } from '@mui/material';
 import {mobile} from '../responsive';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -18,16 +19,17 @@ const Navbar = () => {
                 </SearchContainer>
                 </Left>
             <Center>
-            <Logo>Typhoon.</Logo>
+            <Logo><Link to='/'>Typhoon.</Link></Logo>
 
             </Center>
             <Right>
-                <MenuItem>Register</MenuItem>
-                <MenuItem>Sign In</MenuItem>
-                <MenuItem>
+                <MenuItem><Link to='/register'>Register</Link></MenuItem>
+                <MenuItem><Link to='/login'>Sign In</Link></MenuItem>
+                <MenuItem><Link to='/cart'>
                 <Badge badgeContent={4} color='primary'>
                     <ShoppingCartOutlinedIcon />
                 </Badge>
+                </Link>
                 </MenuItem>
                 
             </Right>
@@ -94,6 +96,12 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
+    a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    
     ${mobile({
         fontSize: '24px', marginLeft: '3px',
     })}
@@ -114,6 +122,10 @@ const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
     ${mobile({
         fontSize: '12px', marginLeft: '10px',
     })}
